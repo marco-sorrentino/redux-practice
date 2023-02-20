@@ -29,10 +29,11 @@ const CardList = (props) => {
         return (
           <SingleCard
             key={i}
-            img={el.thumbnail}
+            /* img={el.thumbnail}
             title={el.title}
             description={el.description}
-            price={el.price}
+            price={el.price} */
+            el={el}
           />
         );
       })}

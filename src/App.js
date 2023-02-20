@@ -12,7 +12,7 @@ function App() {
           <Col md={3}>
             <CardList />
           </Col>
-          <Col>
+          <Col md={6}>
             <CardDetails />
           </Col>
         </Row>
