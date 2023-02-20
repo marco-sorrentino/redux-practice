@@ -2,11 +2,15 @@ import { Card, Button, Badge } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
 const CardDetails = (props) => {
+  // Vado a leggere ciò che c'è dentro lo state in modo tale da poterli mappare ed andare a generare le cards details
   const seeDetail = useSelector((state) => state.product.content);
+  // Uso funzione dispatch in modo tale da poter eseguire un'azione
   const dispatch = useDispatch();
   console.log(seeDetail);
 
   return (
+    // Mappo seeDetail e genero le cards details in base agli oggetti che ci sono.
+    // Riga 23 creo un dispatch per poter eliminare al click del bottone le cards
     <>
       {seeDetail.map((el) => {
         return (

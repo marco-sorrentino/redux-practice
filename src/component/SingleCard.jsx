@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 
 const SingleCard = (props) => {
   const dispatch = useDispatch();
+  // creo la card singola
+  // Riga 16 creo dispatch(azione) e gli passo come payload(argomento) l'intero oggetto
 
   return (
     <Card className="mt-5">
