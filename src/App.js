@@ -3,6 +3,7 @@ import "./App.css";
 import CardList from "./component/CardList";
 import { Container, Row, Col } from "react-bootstrap";
 import CardDetails from "./component/CardDetails";
+import RightCart from "./component/RightCart";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
           </Col>
           <Col md={6}>
             <CardDetails />
+          </Col>
+          <Col>
+            <RightCart />
           </Col>
         </Row>
       </Container>
